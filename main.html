@@ -10,7 +10,20 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
-			
+			if(arr.length==1||arr.length==0){
+				return -Infinity
+			}
+			else{
+				let min=arr.sort();
+				let n=1
+				
+					if(min[arr.length-n]>min[arr.length-n-1]){
+					let secmax=min[arr.length-n-1]
+						
+					}
+				
+				return secmax
+			}
 		}
 
 		function Main() {
