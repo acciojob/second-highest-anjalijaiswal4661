@@ -16,7 +16,7 @@
 			
 				arr.sort((a,b)=>a-b);
 				let n=1
-				let max=min[arr.length-n]
+				let max=arr[arr.length-n]
 				let secmax;
 					while(n < arr.length&&max>arr[arr.length-n-1]){
 					secmax=arr[arr.length-n-1]
@@ -31,7 +31,7 @@
 			var n = prompt("Enter the number of elements");
 			var arr = [];
 			for (var i = 0; i < n; i++) {
-				arr[i] =Number() prompt("Enter element " + (i+1)));
+				arr[i] =Number(prompt("Enter element " + (i+1)));
 			}
 			alert(secondHighest(arr));
 		}
